@@ -5,7 +5,7 @@ import Dashboard from "../components/dashboard";
 
 export default function Home() {
     return (
-        <div className={styles.container}>
+        <div>
             <Head>
                 <title>Self 3.0</title>
                 <meta
@@ -14,19 +14,19 @@ export default function Home() {
                 />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <div className="dash">
-                <Dashboard />
-            </div>
             <main className={styles.main}>
-                <Link href={`/mind`} legacyBehavior>
-                    <a>Mind</a>
-                </Link>
-                <Link href={`/body`} legacyBehavior>
-                    <a>Body</a>
-                </Link>
-                <Link href={`/soul`} legacyBehavior>
-                    <a>Soul</a>
-                </Link>
+                <Dashboard />
+                <div className={styles.nav}>
+                    <Link href={`/mind`} legacyBehavior>
+                        <a>Mind</a>
+                    </Link>
+                    <Link href={`/body`} legacyBehavior>
+                        <a>Body</a>
+                    </Link>
+                    <Link href={`/soul`} legacyBehavior>
+                        <a>Soul</a>
+                    </Link>
+                </div>
             </main>
         </div>
     );

@@ -1,0 +1,26 @@
+.button {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #31313c, #292932);
+    box-shadow: 5px 5px 10px #212128, -5px -5px 10px #3b3b48;
+    border: 0;
+    padding: 0;
+}
+
+.button:hover {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #292932, #31313c);
+    box-shadow: 5px 5px 10px #212128, -5px -5px 10px #3b3b48;
+    border: 0;
+}
+
+.button:active {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: linear-gradient(315deg, #31313c, #292932);
+    box-shadow: -5px -5px 10px #212128, 5px 5px 10px #3b3b48;
+}
